@@ -65,9 +65,9 @@ export default function Home() {
         </ul>
       </div>
       {/* // Right-Scrollable */}
-      <div id='content' className='w-1/2 flex flex-col justify-start items-center overflow-y-hidden pt-32 pr-60 '>
+      <div id='content' className='w-1/2 flex flex-col justify-start items-center gap-20 overflow-y-hidden pt-32 pr-60 '>
         {/* About-section */}
-        <section id='about' className='scroll-mt-24 text-lg mb-36 '>
+        <section id='about' className='scroll-mt-24 text-lg '>
           
             <p className='mb-4 text-slate-300'>
             Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, a start-up, a huge corporation, and a digital product studio.
@@ -82,6 +82,31 @@ export default function Home() {
           
         </section>
         {/* Experience-section */}
+        <div class="group flex items-start justify-start rounded-sm px-6 py-4 transition duration-200 hover:bg-slate-500 hover:bg-opacity-10 hover:backdrop:blur-md hover:backdrop:filter">
+    <div class="h-max w-1/3">
+      <p class="mt-1 text-xs leading-snug text-gray-400">JULY - DEC 2024</p>
+    </div>
+    <div class="pl-400 h-max w-full">
+      <h3 class="font-medium leading-snug text-white transition duration-200 group-hover:text-pink-500">Senior Frontend Engineer, Accessebility ✧ Klaviyo</h3>
+
+      <p class="mt-2 text-sm leading-normal text-gray-400">Developed and styled interactive web apps for Apple Music, including the user interface of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.</p>
+      <p></p>
+      <ul class="mt-2 flex flex-wrap">
+        <li class="mr-1.5 mt-2">
+          <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Ember</div>
+        </li>
+        <li class="mr-1.5 mt-2">
+          <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">scss</div>
+        </li>
+        <li class="mr-1.5 mt-2">
+          <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Javascript</div>
+        </li>
+        <li class="mr-1.5 mt-2">
+          <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">MusicKit.js</div>
+        </li>
+      </ul>
+    </div>
+  </div>
         {/* Project-section */}
         {/* technologies-section */}
         {/* note-section */}
