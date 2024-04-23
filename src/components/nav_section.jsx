@@ -8,7 +8,7 @@ const NavSection = ({ aboutEntry, expEntry, projectEntry, aboutRefVisible, expRe
         <li>
           <button
             onClick={() => {
-              aboutEntry.target.scrollIntoView({ behavior: 'smooth' });
+              aboutEntry?.target.scrollIntoView({ behavior: 'smooth' });
             }}
             className="group flex items-center py-3"
           >
@@ -33,7 +33,7 @@ const NavSection = ({ aboutEntry, expEntry, projectEntry, aboutRefVisible, expRe
         <li>
           <button
             onClick={() => {
-              expEntry.target.scrollIntoView({ behavior: 'smooth' });
+              expEntry?.target.scrollIntoView({ behavior: 'smooth' });
             }}
             className="group flex items-center py-3"
           >
@@ -58,7 +58,7 @@ const NavSection = ({ aboutEntry, expEntry, projectEntry, aboutRefVisible, expRe
         <li>
           <button
             onClick={() => {
-              projectEntry.target.scrollIntoView({ behavior: 'smooth' });
+              projectEntry?.target.scrollIntoView({ behavior: 'smooth' });
             }}
             className="group flex items-center py-3"
           >

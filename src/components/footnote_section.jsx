@@ -1,8 +1,8 @@
 import React from 'react';
 
-const PoetryText = () => {
+const FootnoteSection = () => {
   return (
-    <div className="mb-28 mt-32 w-full pr-16">
+    <section id='footnote' className="mb-28 mt-32 w-full pr-16 pl-4">
       <p className="text-md font-light text-slate-800">
         Loosely sketched in{' '}
         <span className="relative text-slate-200 hover:text-pink-default">
@@ -34,8 +34,8 @@ const PoetryText = () => {
         </span>{' '}
         typeface, its letters grace.
       </p>
-    </div>
+    </section>
   );
 };
 
-export default PoetryText;
+export default FootnoteSection;
