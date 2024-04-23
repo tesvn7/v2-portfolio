@@ -11,3 +11,20 @@
     #233554 100%
   );
 }
+
+@layer base{
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #d4387c;
+    border-radius: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  
+
+}

@@ -15,7 +15,7 @@ const ProjectCard = ({
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className="group flex items-start justify-start rounded-sm px-6 py-4 transition duration-200 hover:bg-slate-500 hover:bg-opacity-10 hover:backdrop:blur-md hover:backdrop:filter mb-6">
+      <div className="group flex cursor-alias	 items-start justify-start rounded-sm px-6 py-4 transition duration-200 hover:bg-slate-500 hover:bg-opacity-10 hover:backdrop:blur-md hover:backdrop:filter mb-6">
         {/* <!-- Project Image --> */}
         <div className="mt-1 h-max w-1/3">
           <div className="h-24 w-40 rounded-sm bg-slate-800 shadow-md border border-slate-700 group-hover:border-2">
@@ -32,7 +32,7 @@ const ProjectCard = ({
           <div className="flex gap-2 justify-start items-center">
             <h3
               id="project_name"
-              className="font-medium leading-snug text-white transition duration-200 group-hover:text-pink-500"
+              className="font-medium leading-snug text-white transition duration-200 group-hover:text-pink-default"
             >
               {project_name}
             </h3>
@@ -45,7 +45,7 @@ const ProjectCard = ({
           {/* <!-- Project Description --> */}
           <p
             id="project_description"
-            className="mt-2 text-sm leading-normal text-gray-400"
+            className="mt-2 text-sm leading-normal font-light text-gray-400"
           >
             {project_description}
           </p>

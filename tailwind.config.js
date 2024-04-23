@@ -142,16 +142,7 @@ module.exports = {
           900: 'rgba(56, 195, 166, 0.1)',
         },
         'pink': {
-          100: '#f57dff',
-          100: '#fce0ff',
-          200: '#f9c1ff',
-          300: '#f6a2ff',
-          400: '#f283ff',
-          500: '#f57dff',
-          600: '#f26aff',
-          700: '#ef57ff',
-          800: '#ec44ff',
-          900: '#e931ff',
+          default: '#d4387c',
         },
         'blue': {
           default: '#57cbff',
