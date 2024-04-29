@@ -1,14 +1,15 @@
 import React from 'react';
 import ProjectCard from './project_card';
 
-const ProjectSection = ({ ref, allProjectsUrl, projectsList }) => {
+const ProjectSection = React.forwardRef(({ allProjectsUrl, projectsList }, ref) => {
   return (
     <section ref={ref} id="projects" className="scroll-mt-24 mt-32">
       {projectsList.map((project, index) => (
         <ProjectCard
           key={index}
-          project_link={project.link}
-          project_image={project.image}
+          project_image_url={project.image_url}
+          project_app_url={project.app_url}
+          project_github_url={project.github_url}
           project_name={project.name}
           project_description={project.description}
           project_technologies={project.technologies}
@@ -28,6 +29,6 @@ const ProjectSection = ({ ref, allProjectsUrl, projectsList }) => {
       </div>
     </section>
   );
-};
+});
 
 export default ProjectSection;

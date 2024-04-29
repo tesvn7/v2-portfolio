@@ -1,30 +1,25 @@
+'use client'
 import React from "react";
+import { motion } from "framer-motion"
+import Image from 'next/image';
+import SourceCodeIcon from '../../public/assets/icons/s-code-icon.png'
 
 const ProjectCard = ({
-  project_link,
-  project_image,
+  project_image_url,
+  project_app_url,
+  project_github_url,
   project_name,
   project_description,
   project_technologies,
 }) => {
   return (
     // <!-- Project link -->
-    <a
-      id="project_link"
-      href={project_link}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div className="group flex cursor-alias	 items-start justify-start rounded-sm px-6 py-4 transition duration-200 hover:bg-slate-500 hover:bg-opacity-10 hover:backdrop:blur-md hover:backdrop:filter mb-6">
+    <a id="project_link" href={project_app_url} target="_blank" rel="noopener noreferrer" >
+      <div className="group flex items-start justify-start rounded-sm px-6 py-4 transition duration-200 hover:bg-slate-500 hover:bg-opacity-10 hover:backdrop:blur-md hover:backdrop:filter mb-6">
         {/* <!-- Project Image --> */}
         <div className="mt-1 h-max w-1/3">
           <div className="h-24 w-40 rounded-sm bg-slate-800 shadow-md border border-slate-700 group-hover:border-2">
-            <img
-              id="project_image"
-              src={project_image}
-              alt="Image-P"
-              className="object-fill w-full h-full"
-            ></img>
+            <Image id="project_image" src={project_image_url} alt="Image-P" className="object-fill w-full h-full" />
           </div>
         </div>
         {/* <!-- Project Name --> */}
@@ -53,13 +48,17 @@ const ProjectCard = ({
           <ul id="experience_technologies" className="mt-2 flex flex-wrap">
             {project_technologies.map((tech, index) => (
               <li key={index} className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                <motion.div whileHover={{ scale: 1.1 }} className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                   {tech}
-                </div>
+                </motion.div>
               </li>
             ))}
           </ul>
         </div>
+        <motion.div  whileHover={{ scale: 1.3 }} className=' text-slate-100 rounded-md'>
+          <Image src={SourceCodeIcon} alt='Source Code Icon' width={50} height={40} />
+          <a href={project_github_url} />
+        </motion.div>
       </div>
     </a>
   );

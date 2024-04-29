@@ -1,14 +1,15 @@
 import React from 'react';
 import ExperienceCard from './experience_card';
 
-const ExperienceSection = ({ ref, resumeUrl, experienceList }) => {
+const ExperienceSection = React.forwardRef(({ resumeUrl, experienceList }, ref) => {
   return (
     <section ref={ref} className="scroll-mt-24">
       {experienceList.map((experience, index) => (
         <ExperienceCard
           key={index}
           experience_duration={experience.duration}
-          experience_role_company={experience.roleCompany}
+          experience_role={experience.role}
+          experience_company={experience.company}
           experience_description={experience.description}
           experience_technologies={experience.technologies}
         />
@@ -27,6 +28,6 @@ const ExperienceSection = ({ ref, resumeUrl, experienceList }) => {
       </div>
     </section>
   );
-};
+});
 
 export default ExperienceSection;
