@@ -5,7 +5,7 @@ import HeadingSection from "@/components/heading_section";
 import NavSection from "@/components/nav_section";
 import SocialSection from "@/components/social_section";
 import AboutSection from "@/components/about_section";
-import ExperienceSection from "@/components/experience_section";
+import ExperienceSection from "@/components/experience_section"; 
 import ProjectSection from "@/components/project_section";
 import FootnoteSection from "@/components/footnote_section";
 import { useEffect, useState } from "react";

@@ -22,7 +22,7 @@ const SocialSection = ({ githubUrl, linkedinUrl, twitterUrl }) => {
       {/* Twitter */}
       <li className="mr-10 text-xs shrink-0 hover:-translate-y-2 transition duration-200">
         <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
-          <Image src={IconTwitter} width={25} height={25} alt="Twitter" />
+          <Image src={IconTwitter} width={26} height={25} alt="Twitter" />
         </a>
       </li>
     </ul>

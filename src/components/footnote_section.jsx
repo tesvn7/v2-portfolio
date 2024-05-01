@@ -3,7 +3,7 @@ import React from 'react';
 const FootnoteSection = () => {
   return (
     <section id='footnote' className="mb-28 mt-32 w-full pr-16 pl-4">
-      <p className="text-md font-light text-slate-800">
+      <p className="text-sm font-normal text-slate-default">
         Loosely sketched in{' '}
         <span className="relative text-slate-200 hover:text-pink-default">
           Figma's

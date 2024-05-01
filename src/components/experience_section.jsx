@@ -17,12 +17,12 @@ const ExperienceSection = React.forwardRef(({ resumeUrl, experienceList }, ref) 
 
       {/* Resume */}
       <div className="flex items-center justify-start gap-1 mt-10 group">
-        <h5 className="text-md text-slate-300 font-sans hover:underline underline-offset-4 decoration-2 hover:decoration-teal-400 duration-200 transition">
-          <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+        <h5 className="text-md text-slate-default font-sans hover:underline underline-offset-4 decoration-2 hover:decoration-teal-400 duration-200 transition">
+          <a href={resumeUrl} target="_blank" rel="noopener noreferrer" className='font-mono font-semibold'>
             Resume
           </a>
         </h5>
-        <span className="text-slate-300 group-hover:translate-x-2 transition duration-200 group-hover:text-teal-400">
+        <span className="text-slate-300 group-hover:translate-x-2 transition duration-200 group-hover:text-teal-400 font-mono font-semibold">
           →
         </span>
       </div>

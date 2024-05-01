@@ -10,7 +10,7 @@ const HeadingSection = ({ name, role, subHeading }) => {
         <h3 className="mt-3 text-lg sm:text-xl text-white font-medium tracking-tight">
           {role}
         </h3>
-        <p className="mt-4 max-w-xs leading-normal font-light text-slate-500">
+        <p className="mt-5 max-w-xs leading-normal font-md text-md text-slate-default">
           {subHeading}
         </p>
       </div>
