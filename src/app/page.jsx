@@ -94,7 +94,7 @@ export default function Home() {
     fetchData();
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2500);
   }, []);
 
   const { ref: aboutRef, inView: aboutRefVisible, entry: aboutEntry} = useInView({threshold: 1});
